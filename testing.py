@@ -8,5 +8,5 @@ device={
 }
 
 with ConnectHandler(**device) as connection:
-    result = connection.send_command(command_string= "show ip int br")
+    result = connection.send_command(command_string= "show run | section ospf")
     print(result)

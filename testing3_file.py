@@ -12,5 +12,5 @@ configs=[
 ]
 
 with ConnectHandler(**device) as connection:
-    result = connection.send_config_set(config_commands=configs)
+    result = connection.send_config_from_file(config_file="config.cfg")
     print(result)
